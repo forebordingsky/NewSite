@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.someMenu-ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.someMenu-li {
+    list-style: none;
+}
+.someMenu-link {
+    display: block;
+    text-transform: uppercase;
+    padding: 9px 20px;
+}
+.site-header-menu.type-lower a {
+    transition: all 0.2s ease-in-out;
+    color: #FFF;
+}
+.site-header-menu.type-lower .someMenu-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 1030px){
+    .site-header-menu.type-lower {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 500;
+        background: #164ACF url(/assets/images/header_back.png) center -389px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1029px){
+    .site-header-menu {
+        display: none;
+    }
+}

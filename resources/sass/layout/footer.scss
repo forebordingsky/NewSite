@@ -1,0 +1,107 @@
+@import '../variables.scss';
+
+.site-footer {
+    padding: 40px 0;
+    background: $color-blue url(/assets/images/footer.png) top center;
+    color: #FFF;
+}
+.site-footer-section-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.site-footer-opt {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+.site-footer-opt a, a.site-footer-opt .site-footer-opt-caption {
+    display: inline-block;
+    color: #fff;
+}
+.site-footer-opt.type-with-icon {
+    padding-left: 25px;
+    position: relative;
+}
+.site-footer-opt.type-with-icon i {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.istu-i-letter {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    text-align: center;
+}
+.istu-i-letter:before {
+    content: "";
+    display: inline-block;
+    background: url(/assets/images/icon_sprite.png) no-repeat -40px -45px;
+    width: 16px;
+    height: 11px;
+    background-size: 145px auto;
+    vertical-align: middle;
+}
+.istu-i-phone:before {
+    content: "";
+    display: inline-block;
+    background: url(/assets/images/icon_sprite.png) no-repeat -60px -45px;
+    width: 15px;
+    height: 18px;
+    background-size: 145px auto;
+    vertical-align: middle;
+}
+.istu-i-email:before {
+    content: "";
+    display: inline-block;
+    background: url(/assets/images/icon_sprite.png) no-repeat -80px -45px;
+    width: 15px;
+    height: 16px;
+    background-size: 145px auto;
+    vertical-align: middle;
+}
+.istu-i-fax:before {
+    content: "";
+    display: inline-block;
+    background: url(/assets/images/icon_sprite.png) no-repeat -100px -45px;
+    width: 16px;
+    height: 15px;
+    background-size: 145px auto;
+    vertical-align: middle;
+}
+.site-footer-social-one {
+    display: inline-block;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (min-width: 1030px){
+    .site-footer-columns {
+        display: flex;
+    }
+    .site-footer-columns-one {
+        flex: 1;
+        padding: 0px 20px;
+    }
+    .site-footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1029px){
+    .site-footer {
+        padding: 20px 0;
+        background: $color-blue;
+    }
+    .site-footer-columns {
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    .site-footer-columns-one {
+        margin-bottom: 40px;
+    }
+    .site-footer-section {
+        margin-bottom: 15px;
+    }
+}

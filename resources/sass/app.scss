@@ -1,0 +1,76 @@
+@import 'variables.scss';
+html{
+    body{
+        margin: 0px;
+        padding: 0px;
+        min-height: 100%;
+    }
+}
+body{
+    background-color: #FFF;
+    font: 16px Cuprum, "Open Sans", sans-serif;
+    color: #444;
+    -webkit-text-size-adjust: 100%;  
+}
+a{
+    color: $color-blue;
+    text-decoration: none;
+    outline: none;
+}
+form {
+    margin-bottom: 0;
+}
+button {
+    outline: none;
+}
+h1, h2, h3 {
+    font-family: Cuprum, "Open Sans", sans-serif;
+}
+.site-wrapper{
+    height: auto;
+}
+
+.link.animation {
+    position: relative;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.link.animation:after, .link.animation:before {
+    transition: all 0.5s;
+}
+.link.animation:after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+@import 'layout/header.scss';
+@import 'layout/navigation.scss';
+@import 'layout/usefullinfo.scss';
+@import 'layout/footer.scss';
+
+@media only screen and (min-width: 1030px){
+    body{
+        min-width: 1304px;
+    }
+    .layout-center{
+        width: 1280px;
+        margin: 0px auto;
+    }        
+}
+@media only screen and (max-width: 1029px){
+    .layout-center {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1029px) and (min-width: 481px){
+    
+}
+
+
