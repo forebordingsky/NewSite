@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.admin-site-wrapper{
+    height: auto;
+    display: grid;
+    grid-template-rows: 0.5fr 8fr 0.5fr;
+    //grid-template-columns: 1fr 3fr;
+    //grid-template-areas: "header header" "nav content" "footer footer";
+}
+.header-wrap{
+    //grid-area: header;
+    background: $color-blue url(/assets/images/header_back.png) no-repeat;
+}
+.header-content-wrap{
+    display: flex;   
+    padding: 10px 80px;
+    color: $text-color;
+}
+.header-content-logo-link{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(/assets/images/istu-logo.svg) no-repeat;
+    background-size: cover;
+}
+.header-content-caption-wrap{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.header-content-caption-sub,.header-content-caption-main{
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-content-caption-main{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-wrap{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.content-wrap{
+    //grid-area: content;
+}
+.footer-wrap{
+    //grid-area: footer;
+    background: $color-blue url(/assets/images/header_back.png) no-repeat;
+}

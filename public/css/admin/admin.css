@@ -1,0 +1,152 @@
+html body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+}
+
+body {
+  background-color: #FFF;
+  font: 16px Cuprum, "Open Sans", sans-serif;
+  color: #444;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #164ACF;
+  text-decoration: none;
+  outline: none;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+button {
+  outline: none;
+}
+
+h1, h2, h3 {
+  font-family: Cuprum, "Open Sans", sans-serif;
+}
+
+.site-wrapper {
+  height: auto;
+}
+
+.link.animation {
+  position: relative;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.link.animation:after, .link.animation:before {
+  transition: all 0.5s;
+}
+
+.link.animation:after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.admin-site-wrapper {
+  height: auto;
+  display: grid;
+  grid-template-rows: 0.5fr 8fr 0.5fr;
+}
+
+.header-wrap {
+  background: #164ACF url(/assets/images/header_back.png) no-repeat;
+}
+
+.header-content-wrap {
+  display: flex;
+  padding: 10px 80px;
+  color: #FFF;
+}
+
+.header-content-logo-link {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(/assets/images/istu-logo.svg) no-repeat;
+  background-size: cover;
+}
+
+.header-content-caption-wrap {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.header-content-caption-sub, .header-content-caption-main {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-content-caption-main {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-wrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.footer-wrap {
+  background: #164ACF url(/assets/images/header_back.png) no-repeat;
+}
+
+.navigation-wrap {
+  display: grid;
+}
+
+.navigation-main {
+  margin: 10px;
+  padding-top: 10px;
+  background: #D4E4FF;
+  color: #164ACF;
+  text-transform: uppercase;
+}
+
+.navigation-menu {
+  padding: 0 10px 4px 10px;
+}
+
+.navigation-menu-header {
+  display: inline-block;
+}
+
+.navigation-menu-items {
+  -webkit-margin-before: 4px;
+          margin-block-start: 4px;
+  -webkit-margin-after: 4px;
+          margin-block-end: 4px;
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+}
+
+@media only screen and (min-width: 1030px) {
+  body {
+    min-width: 1304px;
+  }
+
+  .layout-center {
+    width: 1280px;
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width: 1029px) {
+  .layout-center {
+    width: 100%;
+  }
+}

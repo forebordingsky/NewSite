@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+
+.navigation-wrap{
+    display: grid;
+}
+.navigation-main{
+    margin: 10px;
+    padding-top: 10px;
+    background: $bg-color-light-blue;
+    color: $color-blue;
+    text-transform: uppercase;
+}
+.navigation-menu{
+    padding: 0 10px 4px 10px;
+}
+.navigation-menu-header{
+    display: inline-block;   
+}
+
+.navigation-menu-items{
+    margin-block-start: 4px;
+    margin-block-end: 4px;
+    padding-inline-start: 30px;
+}
